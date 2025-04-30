@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BN Furniture</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fefefe;
+      color: #00129A;
+    }
+
+    header {
+      background-color: #C0C0C0;
+      padding: 20px 60px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #EB3324;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #EB3324;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #111;
+    }
+
+    .hero {
+      background: url(https://www.primeclassicdesign.com/images/modern-italian-bedroom-sets/sworovski-crystals-on-headboard-padded-spain-bed-group-franco-kl-123.jpg) no-repeat center center/cover;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+       color: #EB3324;
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero-content h2 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    .hero-content p {
+      font-size: px;
+      margin-bottom: 30px;
+    }
+
+    .hero-content button 
+    {
+      padding: 12px 24px;
+      background-color: #808080;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 7px;
+      transition: background-color 0.3s;
+
+    }
+
+    .hero-content button:hover {
+      background-color: #C0C0C0;
+    }
+
+    .products {
+      padding: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      background-color: ;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      color: #777;
+      font-size: 14px;
+    }
+
+     </style>
+</head>
+<body>
+
+  <header>
+    <h1>BN FURNITURE </h1>
+    <nav>
+      <a href="websitepage1.html">Home</a>
+      <a href="websitepage2.html">Shop</a>
+      <a href="webpage3.html">About</a>
+      <a href="websitepage4.html">Contact </a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Stylish & Comfortable Furniture</h2>
+      <p>Transform your space with modern elegance and timeless design.</p>
+
+      <button><a href="websitepage2.html">Shop Now</a></button>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://i.pinimg.com/474x/82/1e/e9/821ee9277af1f3c7062039773e647743.jpg" alt="Sofa">
+      <div class="product-info">
+        <h3><a href="sofa.html">Modern Sofa</a></h3>
+        <p>Soft fabric, clean design, perfect for any living room.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pinimg.com/474x/b5/33/1c/b5331c2c3affefc9e3f180e5a058a0d1.jpg" alt="Dining Table">
+      <div class="product-info">
+        <h3><a href="diningset.html">Wooden Dining Set</a></h3>
+        <p>Elegant design crafted from solid oak wood.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://i.pinimg.com/474x/39/fe/16/39fe1624b75188ac406b51793656dd2d.jpg" alt="Armchair">
+      <div class="product-info">
+        <h3><a href="Comfy Armchair.html">Comfy Armchair</a></h3>
+        <p>Perfect for reading corners or cozy living areas.</p>
+      </div>
+    </div>
+  </section>
+
+  </body>
+</html>
